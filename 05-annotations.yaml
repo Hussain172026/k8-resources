@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: annotations
+  labels:
+    course: k8
+    trainer: imam
+  annotations:
+    kubernetes.io/created-by: 'Imam'
+spec:
+  containers:
+  - name: nginx
+    image: nginx
