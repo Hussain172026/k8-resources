@@ -6,8 +6,8 @@ metadata:
     app: nginx
     purpose: deployement
     tier: web
-  spec:
-    replicas: 3
+spec:
+  replicas: 3
     selector:
       matchLabels:
         app: nginx
