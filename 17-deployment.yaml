@@ -1,0 +1,25 @@
+kind: Deployement
+apiVersion: apps/v1
+metadata:
+  name: deployement
+  labels:
+    app: nginx
+    purpose: deployement
+    tier: web
+  spec:
+    replicas: 3
+    selector:
+      matchLabels:
+        app: nginx
+        tier: web
+        project: some
+    template:
+      metadata:
+        labels:
+          app: nginx
+          tier: web
+          project: some
+      spec:
+        containers:
+          - name: nginx
+            image: nginx
