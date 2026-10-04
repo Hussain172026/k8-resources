@@ -1,8 +1,7 @@
-kind: Configmap
+kind: ConfigMap
 apiVersion: v1
 metadata:
   name: Configmap
 data:
   course: "devops with aws"
   trainer: "self"
-  
