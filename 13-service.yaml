@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: service
+spec:
+  selector:
+    name: frontend
+    project: expense
+    component: frontend
+    environment: dev
+  ports
+  - protocol: TCP
+    port: 80 
+    targetport: 80
